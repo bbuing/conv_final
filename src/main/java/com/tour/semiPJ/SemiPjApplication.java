@@ -1,13 +1,13 @@
-package com.example.finalPJ;
+package com.tour.semiPJ;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FinalPjApplication {
+public class SemiPjApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FinalPjApplication.class, args);
+		SpringApplication.run(SemiPjApplication.class, args);
 	}
 
 }

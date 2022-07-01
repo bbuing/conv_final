@@ -1,4 +1,4 @@
-package com.example.finalPJ;
+package com.tour.semiPJ;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
