@@ -13,7 +13,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public User join(User user) {
+    public void save(User user) {
         userRepository.save(user);
     }
 }

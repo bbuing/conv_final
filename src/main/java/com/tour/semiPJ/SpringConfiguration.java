@@ -15,8 +15,8 @@ public class SpringConfiguration {
         this.userRepository = userRepository;
     }
 
-    @Bean
-    public UserService userService() {
-        return new UserService(userRepository);
-    }
+//    @Bean
+//    public UserService userService() {
+//        return new UserService(userRepository);
+//    }
 }
