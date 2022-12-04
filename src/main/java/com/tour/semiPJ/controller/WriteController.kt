@@ -1,15 +1,16 @@
-package com.tour.semiPJ.controller;
+package com.tour.semiPJ.controller
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
+import com.tour.semiPJ.domain.dto.BoardDto
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RestController
 
-@Controller
-public class WriteController {
-
+@RestController
+class WriteController {
     @PostMapping("/write")
-    public String wirte() {
-        return "redirect:/";
-    }
+    fun writeBoard(@RequestBody boardDto: BoardDto) : Long {
+        println(boardDto)
+        return 1
 //    BasicBean basic = BasicBean.newInstance();
 //    // 새로 설정한 번호로 이미지들을 저장할 폴더를 생성한다. 이때 생성한 폴더는 이후 Write페이지에서 저장하지 않고 취소하였을시 삭제하도록 한다.
 //		basic.setPath(req, "upload/" + board_num);
@@ -35,4 +36,5 @@ public class WriteController {
 //		try {url = (String)command.processCommand(req, resp);} catch (SerialException e) {System.out.println("WriteControl : " + e);}
 //    RequestDispatcher view = req.getRequestDispatcher(url);
 //		view.forward(req, resp);
+    }
 }
